@@ -1,3 +1,4 @@
+//solution in c++
 class Solution{
   public:
   int smallestSumSubarray(vector<int>& a){
