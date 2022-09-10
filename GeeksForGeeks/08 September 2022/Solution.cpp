@@ -10,3 +10,4 @@ int sum(Node* root, int k)
 { 
     return dfs(root,k);
 }  
+//solve
