@@ -20,6 +20,7 @@ void Bhagwat_geeta( int arr[], int brr[], int n )
         cout<<"yes"<<endl;
 
 }
+//…............... . . 
 int main()
 {
     int t;
