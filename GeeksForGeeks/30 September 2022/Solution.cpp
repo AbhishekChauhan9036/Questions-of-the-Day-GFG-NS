@@ -1,6 +1,6 @@
 int safePos(int n, int k) {
 
-        // code here
+        // code here..
 
             list<int> l;
 
