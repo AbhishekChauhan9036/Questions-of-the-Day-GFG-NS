@@ -12,5 +12,6 @@ public:
         else if (_TYU % 2 == 1 && _UYTR % 2 == 1 ) Uttar = xor1 ^ xor2 ;
         else if (_TYU % 2 == 0 && _UYTR % 2 == 1 )Uttar = xor1 ;
         return Uttar;      
+        //.….......
     }
 };
