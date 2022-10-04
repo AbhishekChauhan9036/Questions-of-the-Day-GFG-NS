@@ -1,3 +1,4 @@
+//....................................
 class Solution {
 public:
     int minChar(string str){
