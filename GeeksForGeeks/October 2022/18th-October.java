@@ -1,4 +1,4 @@
-
+//........................................................................................
 class Solution{
     static ArrayList<Integer> downwardDigonal(int N, int A[][])
     {
