@@ -10,7 +10,7 @@ class Solution {
                     wc++;
                 }
             }oooo = Math.min(wc,oooo);
-        }
+        }//
         return oooo;
     }
 }
