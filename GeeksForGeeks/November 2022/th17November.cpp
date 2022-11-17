@@ -1,7 +1,7 @@
 
 class Solution{
 public:
-	// #define ll long long
+	// #define ll long long..
 
 	long long countSubarray(int arr[], int n, int k) {
 	    int left = 0;
