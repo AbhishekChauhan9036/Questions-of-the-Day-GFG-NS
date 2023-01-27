@@ -4,7 +4,7 @@ class Solution {
  int mod=1e9+7;
  
  int CountWays(string str){
-     // Code here
+
      if(str[0]=='0')return 0;
      int n=str.size();
      vector<int>v(n+1,0);
