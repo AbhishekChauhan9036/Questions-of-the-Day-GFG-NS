@@ -1,1 +1,1 @@
-# CP-CodeChef-Codeforces-Leetcode
+# Questions-of-the-Day-GFG-NS
