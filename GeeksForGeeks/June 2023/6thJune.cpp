@@ -1,22 +1,16 @@
-
 class Solution
 {
     public:
-       void solve(Node* root , int k ,int &ans)
+        void findPreSuc(Node* root, Node*& pre, Node*& suc, int key)
     {
-        if(root == NULL)
-        return;
-        
-        ans = min(ans , abs(root->data-k));
-        solve(root->left , k , ans);
-        solve(root->right , k ,ans);
-        
-    }
-    int minDiff(Node *root, int k)
-    {
-        int ans = INT_MAX;
-        solve(root , k ,ans);
-        return ans;
-        
+         if(root)
+         {
+             findPreSuc(root->left,pre,suc,key);
+             if(root->key < key)
+                 pre=root;
+             if(root->key > key and suc==NULL)
+                 suc=root;
+             findPreSuc(root->right,pre,suc,key);
+         }
     }
 };
