@@ -1,27 +1,17 @@
 
 class Solution
 {
-public:
-    string kthPermutation(int n, int k)
-    {
-        string h="";
-        int chk=1;
-        for(int i=1;i<=n;i++){
-            h+=to_string(i);
-            chk*=i;
-        }
-        sort(h.begin(),h.end());
-        string ans="";
-        int i=0,g=0,r=0;
-        while(i<n){
-           r=chk/(n-i),g=k/r;
-           if(k%r==0) g--;
-           ans+=h[g];
-           h.erase(h.begin()+g);
-           k=k-(r)*(g);
-           i++;
-           chk=r;
-        }
-        return ans;
-    }
+	public:
+		vector<string>find_permutation(string s)
+		{
+		    sort(s.begin(), s.end());
+		    vector<string> res;
+		    string str = s;
+		    while(1){
+		        res.push_back(s);
+		        next_permutation(s.begin(), s.end());
+		        if(str == s)break;
+		    }
+		    return res;
+		}
 };
