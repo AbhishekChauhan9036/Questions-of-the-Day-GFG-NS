@@ -20,7 +20,6 @@ class Solution{
         }
         
         vector<vector<int>> dp(n, vector<int>(n+1, -1));
-        
         return helper(n-1, n, price, weight, dp);
         
     }
