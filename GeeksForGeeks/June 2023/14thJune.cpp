@@ -3,7 +3,7 @@ long long maxDiamonds(int A[], int n, int k) {
         for(int i = 0; i< n; i++){
             pq.push(A[i]);
         }
-        //jhsdjhsj
+        //jhsdj
         long long sum = 0;
         while(k--){
             int temp = pq.top();
